@@ -1,6 +1,6 @@
 # Docs: https://caddyserver.com/docs/caddyfile
 https://marinaparkrs.site {
-    root /var/www/app/public
+    root /var/www/marina-park-api/public
     fastcgi / php-fpm:9000 php {
         index index.php
     }
