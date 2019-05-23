@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 networks:
   frontend:
@@ -685,8 +685,8 @@ services:
         - ./data/certbot/certs/:/var/certs
         - ./certbot/letsencrypt/:/var/www/letsencrypt
       environment:
-        - CN="fake.domain.com"
-        - EMAIL="fake.email@gmail.com"
+        - CN=marinaparkrs.site
+        - EMAIL=luxassaraivacardoso@gmail.com
       networks:
         - frontend
 
