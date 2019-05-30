@@ -15,6 +15,27 @@ https://marinaparkrs.site {
     tls luxassaraivacardoso@gmail.com
 }
 
+https://financeiro.homologacao.marinaparkrs.site {
+    root /var/www/public
+    
+    gzip
+    browse
+    log /var/log/caddy/access.log
+    errors /var/log/caddy/error.log
+    tls luxassaraivacardoso@gmail.com
+}
+
+https://layout.marinaparkrs.site {
+    root /var/www/workspace/layout-example
+    
+    gzip
+    browse
+    log /var/log/caddy/access.log
+    errors /var/log/caddy/error.log
+    tls luxassaraivacardoso@gmail.com
+}
+
+
 laradock1.demo:80 {
     root /var/www/public
     # Create a Webhook in git.
