@@ -1,5 +1,5 @@
 # Docs: https://caddyserver.com/docs/caddyfile
-https://marinaparkrs.site {
+https://marinaparksystem.com.br {
     root /var/www/marina-park-api/public
     fastcgi / php-fpm:9000 php {
         index index.php
@@ -15,7 +15,7 @@ https://marinaparkrs.site {
     tls luxassaraivacardoso@gmail.com
 }
 
-https://financeiro.homologacao.marinaparkrs.site {
+https://financeiro.homologacao.marinaparksystem.com.br {
     root /var/www/public
     
     gzip
@@ -25,7 +25,7 @@ https://financeiro.homologacao.marinaparkrs.site {
     tls luxassaraivacardoso@gmail.com
 }
 
-https://layout.marinaparkrs.site {
+https://layout.marinaparksystem.com.br {
     root /var/www/workspace/layout-example
     
     gzip
