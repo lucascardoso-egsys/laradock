@@ -38,7 +38,7 @@ COMPOSE_PROJECT_NAME=laradock
 ### PHP Version ###########################################
 
 # Select a PHP version of the Workspace and PHP-FPM containers (Does not apply to HHVM). Accepted values: 7.3 - 7.2 - 7.1 - 7.0 - 5.6
-PHP_VERSION=7.2
+PHP_VERSION=7.3
 
 ### Phalcon Version ###########################################
 
@@ -165,7 +165,7 @@ PHP_FPM_INSTALL_XSL=false
 PHP_FPM_INSTALL_GMP=false
 PHP_FPM_INSTALL_EXIF=false
 PHP_FPM_INSTALL_AEROSPIKE=false
-PHP_FPM_INSTALL_PGSQL=false
+PHP_FPM_INSTALL_PGSQL=true
 PHP_FPM_INSTALL_GHOSTSCRIPT=false
 PHP_FPM_INSTALL_LDAP=false
 PHP_FPM_INSTALL_PHALCON=false
@@ -187,7 +187,7 @@ PHP_FPM_ADDITIONAL_LOCALES="es_ES.UTF-8 fr_FR.UTF-8"
 
 ### PHP_WORKER ############################################
 
-PHP_WORKER_INSTALL_PGSQL=false
+PHP_WORKER_INSTALL_PGSQL=true
 PHP_WORKER_INSTALL_BCMATH=false
 PHP_WORKER_INSTALL_PHALCON=false
 PHP_WORKER_INSTALL_SOAP=false
@@ -687,12 +687,12 @@ PGADMIN_DEFAULT_EMAIL=pgadmin4@pgadmin.org
 PGADMIN_DEFAULT_PASSWORD=admin
 
 ### SONARQUBE ################################################
-## docker-compose up -d sonarqube 
+## docker-compose up -d sonarqube
 ## (If you encounter a database error)
-## docker-compose exec --user=root postgres 
+## docker-compose exec --user=root postgres
 ## source docker-entrypoint-initdb.d/init_sonarqube_db.sh
 ## (If you encounter logs error)
-## docker-compose run --user=root --rm sonarqube chown sonarqube:sonarqube /opt/sonarqube/logs 
+## docker-compose run --user=root --rm sonarqube chown sonarqube:sonarqube /opt/sonarqube/logs
 
 SONARQUBE_HOSTNAME=sonar.example.com
 SONARQUBE_PORT=9000
