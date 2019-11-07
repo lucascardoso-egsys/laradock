@@ -16,7 +16,7 @@ https://marinaparksystem.com.br {
 }
 
 https://financeiro.homologacao.marinaparksystem.com.br {
-    root /var/www/public
+    root /var/www/marina-park-client/dist
     
     gzip
     browse
